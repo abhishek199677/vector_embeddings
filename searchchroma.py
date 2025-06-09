@@ -37,13 +37,6 @@ def generate_embeddings(text):
     # Convert to numpy array for vector operations
     embedding = np.array(data['data'][0]['embedding'])
     
-    print(f"Generated embedding with shape: {embedding.shape}")
-    print(f"First 5 values: {embedding[:5]}")
-    
-    # Example: Calculate vector norm
-    norm = np.linalg.norm(embedding)
-    print(f"Vector norm: {norm}")
-    
     return embedding
 
 
